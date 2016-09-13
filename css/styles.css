@@ -1,0 +1,151 @@
+
+.form-control {
+    width: 200px;
+    margin-top: 10px;
+
+}
+
+.grid {
+    background-color: #FFFFFF;
+
+    border: 1px solid #D2D6D5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .25s;
+    transition: all .25s;
+    margin: 3px;
+    height: 160px;
+    font-size: 19px;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    -ms-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    -o-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    background-color: #ffffff;
+    cursor: pointer;
+    border-radius: 47px;
+
+}
+
+body {
+    font-size: 24px;
+    background-image: url("/images/World-Map.jpg");
+}
+
+header {
+    background-color: bisque;
+}
+
+.navbar {
+    background-color: #e18868;
+    border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff !important;
+    font-size: 27px !important;
+    font-family: serif !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #532029 !important;
+
+}
+
+.title {
+    color: #532029;
+    font-size: 52px;
+    font-weight: bold;
+    font-family: serif;
+    text-align: -webkit-center;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 500px;
+    position: absolute;
+}
+
+.search-box {
+    width: 60%;
+    min-width: 230px;
+    margin: 0 auto;
+    margin-top: -14px;
+    padding: 20px 11px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    background-color: #7593eb;
+}
+
+.btn {
+    margin-top: -462px;
+    margin-left: 295px;
+    border: none;
+    background-color: #532029;
+}
+
+.header-con {
+    height: 100px;
+}
+
+.menus {
+    background-color: purple;
+}
+
+.item-detail {
+    border-bottom: 1px solid #00ffff;
+    background-color: #00ff0d;
+
+}
+
+.right-div {
+    height: 100px;
+}
+
+.item-image {
+    width: 95px;
+    height: 94px;
+    margin: 16px;
+}
+
+.item-styles {
+    color: #532029;
+    margin: 0px -40px -4px 96px;
+    padding-top: 7px;
+    padding-left: 6px;
+    width: 401px;
+
+}
+
+.item-name {
+    color: #428bca;
+}
+
+.col-md-6 {
+    padding: 0;
+}
+
+.forRatingLabel {
+    width: 63px;
+    margin-left: 129px;
+    height: 37px;
+    border: 2px solid;
+    text-align: center;
+    color: white;
+    border-radius: 23px;
+    padding-top: 4px;
+    padding-left: 0px;
+    background-color: darksalmon;
+}
