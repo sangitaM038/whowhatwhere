@@ -18,7 +18,6 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqrm1LI-8ddEp54fYxIEAP1sF64rc4wMU" async
             defer></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.js"></script>
     <script type="text/javascript" src="js/lib/angular.min.js"></script>
     <script type="text/javascript" src="js/lib/angular-route.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
@@ -26,7 +25,7 @@
     <script type="text/javascript" src="js/controllers/viewDataCtrl.js"></script>
 
 </head>
-<body ng-controller="w3MainCtrl">
+<body ng-controller="MainCtrl">
 <div class="container">
     <header>
 
@@ -46,7 +45,7 @@
                                         ngvalue="{{option.name}}">{{option.name}}
                                 </option>
                             </select>
-                            <input id="input1" class="form-control" type="text" ng-model="Location"/>
+                            <input id="input1" class="form-control" type="text"/>
                         </div>
                     </div>
                 </div>

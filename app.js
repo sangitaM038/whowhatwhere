@@ -9,7 +9,7 @@ WWWApp.config(['$routeProvider', function ($routeProvider) {
     })
         .otherwise({redirectTo: '/'});
 }]);
-WWWApp.controller("w3MainCtrl", function ($scope, $location) {
+WWWApp.controller("MainCtrl", function ($scope, $location) {
     $scope.menuNames = [{name: "Fun"}, {name: "Food"}, {name: "Coffee"}, {name: "Shopping"}];
 
     $scope.data = {

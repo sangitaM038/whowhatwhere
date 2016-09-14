@@ -17,15 +17,14 @@ WWWApp.controller("viewDataCtrl", function ($scope, $http, $routeParams, $window
                 var data = response.data;
                 $scope.fetchData = data;
 
-                loadGoogleMarkers();
+                loadGoogleMap();
             }, function errorCallback(response) {
                 console.log('search data error', response);
             });
-            loadGoogleMarkers();
+           loadGoogleMap();
         }
         $scope.gotoMarker = function (event) {
             var id = event.currentTarget.id;
-
             for (var i = 0; i < markers.length; i++) {
                 var marker = markers[i];
 
@@ -39,7 +38,7 @@ WWWApp.controller("viewDataCtrl", function ($scope, $http, $routeParams, $window
             $window.open(url, '_blank');
         }
 
-        function loadGoogleMarkers() {
+        function loadGoogleMap() {
             var locations = $scope.fetchData;
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 10,
