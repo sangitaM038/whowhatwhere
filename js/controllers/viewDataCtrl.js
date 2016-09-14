@@ -16,7 +16,6 @@ WWWApp.controller("viewDataCtrl", function ($scope, $http, $routeParams, $window
             }).then(function successCallback(response) {
                 var data = response.data;
                 $scope.fetchData = data;
-                console.log($scope.fetchData);
 
                 loadGoogleMarkers();
             }, function errorCallback(response) {
@@ -67,7 +66,8 @@ WWWApp.controller("viewDataCtrl", function ($scope, $http, $routeParams, $window
                 google.maps.event.addListener(marker, 'mouseover', (function (marker, i) {
                     return function () {
                         infowindow.setContent('<div><strong><span>' + (i + 1) + '</span>.' +
-                            ' ' + locations[i].name + '</strong>' + '<br>' + locations[i].phone
+                            '<a href="' + locations[i].url + '"> ' + locations[i].name + '</a>' +
+                            '</strong>' + '<br>' + locations[i].phone
                             + '<br>' + locations[i].address + '<br>' + locations[i].name + '</div>');
 
                         infowindow.open(map, marker);

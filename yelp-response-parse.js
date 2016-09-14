@@ -56,8 +56,9 @@ module.exports = function (data) {
         if (item.snippet_image_url) {
             entry.photo = item.image_url;
         } else {
-            entry.photo = 'http://www.megaicons.net/static/img/icons_sizes/8/60/256/science-business-icon.png';
+            entry.photo = 'http://www.megaicons.net/static/img/icons_sizes/8/60/256/buzz-invisible-icon.png';
         }
+
 
         if (item.url) {
             entry.url = item.url;

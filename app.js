@@ -1,6 +1,5 @@
 var WWWApp = angular.module("m3wApp", ['ngRoute']);
 WWWApp.config(['$routeProvider', function ($routeProvider) {
-    console.log('config');
     $routeProvider
         .when('/', {
             templateUrl: 'views/home.html'

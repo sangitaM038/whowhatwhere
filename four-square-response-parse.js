@@ -52,14 +52,22 @@ module.exports = function (data) {
         } else {
             entry.phone = 'NA';
         }
+       /* if (item.photo) {
+            entry.photo = item.photo;
+        } else {
+            entry.photo = 'NA';
+            entry.photo = 'http://www.megaicons.net/static/img/icons_sizes/8/60/256/buzz-invisible-icon.png';
+        }*/
 
         if (item.url) {
             entry.url = item.url;
+            console.log('entry.url',entry.url);
+
         } else {
             entry.url = 'NA';
             entry.photo = 'http://www.megaicons.net/static/img/icons_sizes/8/60/256/buzz-invisible-icon.png';
         }
-
+        entry.photo = 'http://www.megaicons.net/static/img/icons_sizes/8/60/256/buzz-invisible-icon.png';
         if (item.description) {
             entry.description = item.description;
         } else {
