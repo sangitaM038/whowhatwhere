@@ -37,6 +37,7 @@ function getFourSquare(term, location, callBack) {
         if (err) {
             return callBack(err);
         }
+        console.log('venues', venues);
         return callBack(null, fourParse(venues));
     });
 }
@@ -109,4 +110,3 @@ WWWApp.get('/search', function (req, res) {
 WWWApp.listen(3003, function () {
     opener('http://localhost:3003');
 });
-

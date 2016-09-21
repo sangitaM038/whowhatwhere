@@ -1,9 +1,10 @@
 <div class="container" style="width: 70%;">
     <div class="col-xs-2 col-sm-4 col-md-6 " style="float:left; height:800px; overflow-y:scroll;">
-        <div class="grid" ng-repeat="item in fetchData" class="item-detail"
+        <div class="grid" ng-repeat="item in fetchData" class="item-detail" style="background-color: transparent"
              id="{{ item.id }}" ng-mouseover="gotoMarker($event)">
             <div style="float:left;"><img class="img-rounded item-image" ng-src="{{item.photo}}"/></div>
-            <div class="item-name item-styles">{{$index + 1}}. Name:<a href="{{item.url}}">{{item.name}}</a></div>
+            <div class="item-name item-styles">{{$index + 1}}. Name:<a style="color: white" href="{{item.url}}">{{item.name}}</a>
+            </div>
             <div class="item-styles">Phone:{{item.phone}}</div>
             <div class="item-styles">Address:{{item.address}}</div>
             <div class="item-styles forRatingLabel">{{item.rating}}</div>

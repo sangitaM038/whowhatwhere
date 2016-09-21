@@ -17,7 +17,13 @@ module.exports = function (data) {
 
         if (item.categories instanceof Array && item.categories.length > 0) {
             entry.categories = [];
+
             item.categories.forEach(function (e) {
+                if (item.categories[0].icon && item.categories[0].icon.prefix && item.categories[0].icon.suffix) {
+                    entry.photo = item.categories[0].icon.prefix + '64' + item.categories[0].icon.suffix;
+                }else{
+                    entry.photo = 'http://www.megaicons.net/static/img/icons_sizes/8/60/256/buzz-invisible-icon.png';
+                }
                 if (e.name) {
                     entry.categories.push(e.name);
                 }
@@ -55,13 +61,10 @@ module.exports = function (data) {
 
         if (item.url) {
             entry.url = item.url;
-            console.log('entry.url',entry.url);
 
         } else {
             entry.url = 'NA';
-            entry.photo = 'http://www.megaicons.net/static/img/icons_sizes/8/60/256/buzz-invisible-icon.png';
         }
-        entry.photo = 'http://www.megaicons.net/static/img/icons_sizes/8/60/256/buzz-invisible-icon.png';
         if (item.description) {
             entry.description = item.description;
         } else {

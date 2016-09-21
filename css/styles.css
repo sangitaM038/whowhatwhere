@@ -120,16 +120,17 @@ header {
 }
 
 .item-styles {
-    color: #532029;
+    color: bisque;
     margin: 0px -40px -4px 96px;
     padding-top: 7px;
     padding-left: 6px;
-    width: 456px;
+    width: 80%;
+    position: relative;
 
 }
 
 .item-name {
-    color: #428bca;
+    color: white;
 }
 
 .col-md-6 {

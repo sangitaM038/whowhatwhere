@@ -21,19 +21,8 @@ WWWApp.controller("viewDataCtrl", function ($scope, $http, $routeParams, $window
             }, function errorCallback(response) {
                 console.log('search data error', response);
             });
-           loadGoogleMap();
+            loadGoogleMap();
         }
-        $scope.gotoMarker = function (event) {
-            var id = event.currentTarget.id;
-            for (var i = 0; i < markers.length; i++) {
-                var marker = markers[i];
-
-                if (marker.id === id) {
-                    angular.element(marker).click();
-                }
-            }
-        };
-
         $scope.gotoBusiness = function (url) {
             $window.open(url, '_blank');
         }
