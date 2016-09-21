@@ -37,7 +37,11 @@ function getFourSquare(term, location, callBack) {
         if (err) {
             return callBack(err);
         }
+<<<<<<< HEAD
         console.log('venues', venues);
+=======
+        console.log('venues',venues);
+>>>>>>> 9abdb4f6d1b0305fa1d77b42f1eb2dc8709d9277
         return callBack(null, fourParse(venues));
     });
 }
